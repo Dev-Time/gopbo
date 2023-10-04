@@ -2,7 +2,6 @@ package pbo
 
 import (
 	"fmt"
-	"io/ioutil"
 	"os"
 	"path/filepath"
 	"strings"
@@ -60,7 +59,7 @@ func (f *File) Unpack(destination string, verbose bool) error {
 	}
 
 	for key, value := range f.Headers {
-		if err := ioutil.WriteFile(filepath.Join(destination, "$"+strings.ToUpper(key)+"$"), []byte(value), 0666); err != nil {
+		if err := os.WriteFile(filepath.Join(destination, "$"+strings.ToUpper(key)+"$"), []byte(value), 0666); err != nil {
 			return err
 		}
 	}

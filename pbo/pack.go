@@ -3,7 +3,6 @@ package pbo
 import (
 	"fmt"
 	"io"
-	"io/ioutil"
 	"os"
 	"path/filepath"
 	"strings"
@@ -21,7 +20,7 @@ func listFiles(dir string) ([]*FileEntry, map[string]string, error) {
 		}
 
 		if strings.HasPrefix(info.Name(), "$") && strings.HasSuffix(info.Name(), "$") {
-			data, err := ioutil.ReadFile(path)
+			data, err := os.ReadFile(path)
 			if err != nil {
 				return err
 			}
