@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/g0dsCookie/gopbo/pbo"
+	"github.com/Dev-Time/gopbo/pbo"
 	"github.com/google/subcommands"
 )
 

@@ -5,7 +5,7 @@ import (
 	"flag"
 	"fmt"
 
-	"github.com/g0dsCookie/gopbo/pbo"
+	"github.com/Dev-Time/gopbo/pbo"
 	"github.com/google/subcommands"
 )
 

@@ -5,7 +5,7 @@ import (
 	"flag"
 	"os"
 
-	"github.com/g0dsCookie/gopbo/cmd"
+	"github.com/Dev-Time/gopbo/cmd"
 	"github.com/google/subcommands"
 )
 

@@ -1,4 +1,4 @@
-LDFLAGS="-X github.com/g0dsCookie/gopbo/cmd.buildTime=`date -u '+%Y-%m-%d_%I:%M:%S%p'` -X github.com/g0dsCookie/gopbo/cmd.gitHash=`git rev-parse HEAD` -X github.com/g0dsCookie/gopbo/cmd.gitBranch=`git rev-parse --abbrev-ref HEAD`"
+LDFLAGS="-X github.com/Dev-Time/gopbo/cmd.buildTime=`date -u '+%Y-%m-%d_%I:%M:%S%p'` -X github.com/Dev-Time/gopbo/cmd.gitHash=`git rev-parse HEAD` -X github.com/g0dsCookie/gopbo/cmd.gitBranch=`git rev-parse --abbrev-ref HEAD`"
 
 .PHONY: gopbo
 gopbo: vendor
